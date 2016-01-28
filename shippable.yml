@@ -3,7 +3,7 @@ build_image: drydock/u12phpall:tip
 php:
   - 5.5
 
-addons:
+addons: 
   hosts:
     local.symfony2-standard-template: 127.0.0.1
 
