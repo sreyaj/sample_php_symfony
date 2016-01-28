@@ -15,8 +15,8 @@ before_install:
   - sudo a2enmod rewrite
   - sudo a2enmod headers
   - sudo service apache2 restart
-  #- composer self-update
-  #- composer install --prefer-source --no-interaction --optimize-autoloader
+  - composer self-update
+  - composer install --prefer-source --no-interaction --optimize-autoloader
 
 before_script:
   - echo "xdebug.max_nesting_level = 500" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
